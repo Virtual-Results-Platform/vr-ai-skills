@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "virtual-results-website": {
+      "type": "http",
+      "url": "https://mcp.virtualresultsplatform.com/mcp"
+    }
+  }
+}

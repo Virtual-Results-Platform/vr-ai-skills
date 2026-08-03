@@ -14,16 +14,18 @@ Shared skills/instructions for Virtual Results AI agents — Claude Code, Codex,
 
 ```
 /plugin marketplace add Virtual-Results-Platform/vr-ai-skills
+/plugin install vr-website@vr-ai-skills
 /plugin install listing-blog-posts@vr-ai-skills
 ```
 
 Update later with `/plugin marketplace update vr-ai-skills`.
 
-## Skills
+## Plugins
 
 | Plugin | What it does |
 | --- | --- |
-| `listing-blog-posts` | Blog posts from property listings via the VR MCP connector (search listings, images via upload_media source_url, Yoast meta, draft + review flow). |
+| `vr-website` | **Install first.** Connects Claude Code to your Virtual Results website (MCP). Browser sign-in on first use — no keys to copy. |
+| `listing-blog-posts` | Blog posts from property listings (search listings, images, Yoast SEO, draft + review flow). Uses the `vr-website` connection. |
 
 ## Adding a Claude skill
 

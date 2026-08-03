@@ -1,11 +1,19 @@
 {
   "name": "vr-ai-skills",
-  "owner": { "name": "Virtual Results", "email": "ryan@virtualresults.net" },
+  "owner": {
+    "name": "Virtual Results",
+    "email": "ryan@virtualresults.net"
+  },
   "plugins": [
+    {
+      "name": "vr-website",
+      "source": "./claude/plugins/vr-website",
+      "description": "Virtual Results website connector (MCP) \u2014 install this first. Adds the tools every other VR skill uses; browser sign-in on first tool use."
+    },
     {
       "name": "listing-blog-posts",
       "source": "./claude/plugins/listing-blog-posts",
-      "description": "Create WordPress blog posts from property listings via the Virtual Results MCP connector — search listings, write the post, attach images via source_url, set Yoast SEO, request review."
+      "description": "Create WordPress blog posts from property listings via the Virtual Results MCP connector \u2014 search listings, write the post, attach images via source_url, set Yoast SEO, request review."
     }
   ]
 }

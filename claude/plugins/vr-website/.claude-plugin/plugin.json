@@ -1,0 +1,6 @@
+{
+  "name": "vr-website",
+  "version": "1.0.0",
+  "description": "Connects Claude Code to your Virtual Results website — search and edit posts and pages, upload images, manage SEO, publish with owner approval. Sign-in opens in your browser on first use.",
+  "author": { "name": "Virtual Results" }
+}
