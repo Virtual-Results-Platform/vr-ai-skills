@@ -40,6 +40,17 @@ description: Create WordPress blog posts from property listings via the Virtual 
   are the same CDN the site itself uses), but pair each image with ITS OWN listing —
   never reuse a photo from listing A next to listing B, and never pick photos from
   anywhere except that listing's own returned photo fields.
+- URL FORMAT for photos embedded in post content: always serve through the site's
+  ImageKit proxy, never a bare MLS CDN link. `primary_photo` from the API is already
+  proxied (starts with `https://ik.imagekit.io/virtualresults/absurl/`) — use as-is.
+  URLs from the `photos` array come back RAW (cloudfront/cirrussystem/etc.) and MUST
+  be wrapped before embedding:
+  `https://ik.imagekit.io/virtualresults/absurl/tr:di-noimage.png,t-true,f-auto,pr-true/`
+  + URL-encoded original (encodeURIComponent). The proxy adds format optimization,
+  caching, and a fallback image when the MLS rotates the source photo — a bare
+  `photos.prod.cirrussystem.net` or `dvvjkgh94f2v6.cloudfront.net` link silently
+  breaks later. (Exception: upload_media source_url takes the raw URL fine — the
+  file gets copied into the media library, so no proxy needed there.)
 - Give uploads a descriptive filename ("2106-garden-place-atlanta.jpg") and put the
   address in the img alt text.
 
