@@ -1,15 +1,23 @@
-# VR Claude Skills
+# VR AI Skills
 
-Claude Code plugin marketplace for Virtual Results skills.
+Shared skills/instructions for Virtual Results AI agents — Claude Code, Codex, and whatever comes next.
 
-## Install (once per machine)
+## Layout
+
+| Path | What |
+| --- | --- |
+| `.claude-plugin/marketplace.json` | Claude Code plugin marketplace manifest (must stay at repo root) |
+| `claude/plugins/<name>/` | Claude Code plugins (skills, agents, commands) |
+| `codex/` | Codex instruction sets (AGENTS.md snippets, prompts) — empty so far |
+
+## Claude Code install (once per machine)
 
 ```
-/plugin marketplace add https://gitlab.com/ryan34/vr-claude-skills.git
-/plugin install listing-blog-posts@vr-skills
+/plugin marketplace add git@gitlab.com:vr-group8491216/vr-ai-skills.git
+/plugin install listing-blog-posts@vr-ai-skills
 ```
 
-Update later with `/plugin marketplace update vr-skills`.
+Update later with `/plugin marketplace update vr-ai-skills`.
 
 ## Skills
 
@@ -17,6 +25,6 @@ Update later with `/plugin marketplace update vr-skills`.
 | --- | --- |
 | `listing-blog-posts` | Blog posts from property listings via the VR MCP connector (search listings, images via upload_media source_url, Yoast meta, draft + review flow). |
 
-## Adding a skill
+## Adding a Claude skill
 
-New folder under `plugins/<name>/skills/<name>/SKILL.md` + `plugins/<name>/.claude-plugin/plugin.json`, then list it in `.claude-plugin/marketplace.json`. Commit, push — installed copies pick it up on marketplace update.
+New folder `claude/plugins/<name>/skills/<name>/SKILL.md` + `claude/plugins/<name>/.claude-plugin/plugin.json`, then list it in `.claude-plugin/marketplace.json` (source `./claude/plugins/<name>`). Commit, push — installed copies pick it up on marketplace update.
