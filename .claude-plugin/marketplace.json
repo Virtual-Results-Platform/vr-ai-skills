@@ -1,0 +1,11 @@
+{
+  "name": "vr-skills",
+  "owner": { "name": "Virtual Results", "email": "ryan@virtualresults.net" },
+  "plugins": [
+    {
+      "name": "listing-blog-posts",
+      "source": "./plugins/listing-blog-posts",
+      "description": "Create WordPress blog posts from property listings via the Virtual Results MCP connector — search listings, write the post, attach images via source_url, set Yoast SEO, request review."
+    }
+  ]
+}
