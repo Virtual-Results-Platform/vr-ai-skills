@@ -13,7 +13,7 @@ Shared skills/instructions for Virtual Results AI agents — Claude Code, Codex,
 ## Claude Code install (once per machine)
 
 ```
-/plugin marketplace add git@gitlab.com:vr-group8491216/vr-ai-skills.git
+/plugin marketplace add https://gitlab.com/virtual-results/vr-ai-skills.git
 /plugin install listing-blog-posts@vr-ai-skills
 ```
 
