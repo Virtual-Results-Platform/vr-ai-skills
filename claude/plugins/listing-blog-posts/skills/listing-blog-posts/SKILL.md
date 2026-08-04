@@ -7,6 +7,9 @@ description: Create WordPress blog posts from property listings via the Virtual 
 
 # Blog posts from listings (Virtual Results MCP)
 
+> Prose quality: if the exceptional-blogging skill is installed, apply it to all
+> writing in this workflow — this skill covers mechanics, that one covers craft.
+
 ## Workflow order
 1. `get_site_info` / `list_sites` — confirm which site; pass `site` explicitly on every
    call when the account has more than one.
