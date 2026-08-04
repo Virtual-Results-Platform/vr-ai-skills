@@ -1,0 +1,6 @@
+{
+  "name": "exceptional-blogging",
+  "version": "1.0.0",
+  "description": "Writing-craft standards for blog posts — hooks, specificity, local SEO, anti-AI-slop pass. Pairs with listing-blog-posts.",
+  "author": { "name": "Virtual Results" }
+}

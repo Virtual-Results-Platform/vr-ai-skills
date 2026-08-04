@@ -14,6 +14,11 @@
       "name": "listing-blog-posts",
       "source": "./claude/plugins/listing-blog-posts",
       "description": "Create WordPress blog posts from property listings via the Virtual Results MCP connector \u2014 search listings, write the post, attach images via source_url, set Yoast SEO, request review."
+    },
+    {
+      "name": "exceptional-blogging",
+      "source": "./claude/plugins/exceptional-blogging",
+      "description": "Writing-craft standards for blog posts that read like a sharp local expert wrote them \u2014 hooks, structure, specificity, local SEO, and an anti-AI-slop pass. Pairs with listing-blog-posts."
     }
   ]
 }

@@ -26,6 +26,7 @@ Update later with `/plugin marketplace update vr-ai-skills`.
 | --- | --- |
 | `vr-website` | **Install first.** Connects Claude Code to your Virtual Results website (MCP). Browser sign-in on first use — no keys to copy. |
 | `listing-blog-posts` | Blog posts from property listings (search listings, images, Yoast SEO, draft + review flow). Uses the `vr-website` connection. |
+| `exceptional-blogging` | Writing-craft standards — hooks, specificity, local SEO, anti-AI-slop. Install alongside `listing-blog-posts`. |
 
 ## Adding a Claude skill
 
